@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Elegí tu clase en Hunter Game y convertite en un verdadero guerrero." />
+  <link rel="stylesheet" href="style.css" />
+  <title>Hunter Game</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Hunter Game</h1>
+    <div class="nameInputSection">
+      <h2 id="welcomeTitle">Welcome stranger!</h2>
+      <label for="nameInput">What's your name?</label>
+      <input type="text" id="nameInput" placeholder="Enter your name" />
+      <button id="submitName" type="button">Confirm Name</button>
+    </div>
+  </div>
+
+  <div id="jobSelection" class="job-container" style="display: none;">
+    <h2>Choose your class</h2>
+
+    <div class="job-card">
+      <img src="assets/ronin.webp" alt="Clase Ronin" />
+      <h3>Ronin</h3>
+      <p>Arma ideal: Katana (daño balanceado). Estilo: Ataques rápidos y críticos.</p>
+      <button class="selectJobBtn" data-job="Ronin" data-img="assets/ronin.webp" type="button">Seleccionar</button>
+    </div>
+
+    <div class="job-card">
+      <img src="assets/marcialArtist.webp" alt="Clase Marcial Artist" />
+      <h3>Marcial Artist</h3>
+      <p>Arma ideal: Guantes de hierro (reduce daño recibido). Estilo: Defensa y golpes precisos.</p>
+      <button class="selectJobBtn" data-job="Marcial Artist" data-img="assets/marcialArtist.webp" type="button">Seleccionar</button>
+    </div>
+
+    <div class="job-card">
+      <img src="assets/priest.webp" alt="Clase Priest" />
+      <h3>Priest</h3>
+      <p>Arma ideal: Cetro (ataques débiles pero reduce cooldowns). Estilo: Supervivencia y apoyo.</p>
+      <button class="selectJobBtn" data-job="Priest" data-img="assets/priest.webp" type="button">Seleccionar</button>
+    </div>
+
+    <div class="job-card">
+      <img src="assets/mage.webp" alt="Clase Mage" />
+      <h3>Mage</h3>
+      <p>Arma ideal: Bastón arcano (aumenta daño mágico). Estilo: Ataques lentos pero poderosos.</p>
+      <button class="selectJobBtn" data-job="Mage" data-img="assets/mage.webp" type="button">Seleccionar</button>
+    </div>
+  </div>
+  <div id="playerInfo"></div>
+
+  <div id="jobResult" class="job-result" style="display: none;"></div>
+  <button id="resetGameBtn" class="button" style="display: none;">Reiniciar Juego</button>
+
+
+
+  <script src="main.js"></script>
+</body>
+</html>

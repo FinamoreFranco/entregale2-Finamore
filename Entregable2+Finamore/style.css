@@ -1,0 +1,178 @@
+/* Fuente futurista sobria */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+/* Paleta de colores sobria */
+:root {
+  --fondo-oscuro: #0D0D0D;
+  --gris-oscuro: #1A1A1A;
+  --gris-medio: #2E2E2E;
+  --verde-soft: #66FFB2;
+  --verde-hover: #99FFD6;
+  --naranja-opaco: #FF944D;
+  --amarillo-opaco: #FFD580;
+  --borde-suave: rgba(255, 255, 255, 0.1);
+  --texto-claro: #EAEAEA;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-color: var(--fondo-oscuro);
+  color: var(--texto-claro);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Título */
+h1 {
+  font-size: 2.5rem;
+  color: var(--verde-soft);
+  margin: 2rem 0;
+  text-align: center;
+  text-shadow: 0 0 6px rgba(102, 255, 178, 0.2);
+}
+
+/* Botones minimalistas */
+.button,
+.nameInputSection button,
+.job-card button {
+  background-color: transparent;
+  color: var(--verde-soft);
+  border: 2px solid var(--verde-soft);
+  padding: 0.8rem 1.6rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.button:hover,
+.nameInputSection button:hover,
+.job-card button:hover {
+  background-color: var(--gris-medio);
+  color: var(--verde-hover);
+  border-color: var(--verde-hover);
+}
+
+/* Secciones base */
+.card,
+.nameInputSection,
+.job-card {
+  background-color: var(--gris-oscuro);
+  border: 1px solid var(--borde-suave);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 1rem;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+/* Input de nombre */
+.nameInputSection input {
+  background-color: var(--gris-medio);
+  border: 1px solid var(--verde-soft);
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  color: var(--texto-claro);
+  font-size: 1rem;
+  width: 100%;
+  margin-top: 0.8rem;
+  transition: border-color 0.2s;
+}
+
+.nameInputSection input:focus {
+  outline: none;
+  border-color: var(--verde-hover);
+}
+
+/* Resultado del job */
+#jobSection {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.job-result {
+  color: var(--verde-soft);
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-shadow: 0 0 4px rgba(102, 255, 178, 0.2);
+  display: flex;
+  flex-direction: column; /* Para que texto y imagen estén en columna */
+  align-items: center;    /* Centra horizontalmente todo el contenido */
+  gap: 10px;              /* Espacio entre texto e imagen (opcional) */
+}
+.job-result img {
+  display: block;
+  margin: 10px auto 0 auto; /* arriba 10px, izquierda y derecha automáticos, abajo 0 */
+  max-width: 150px; /* o el tamaño que quieras */
+  border-radius: 8px;
+}
+
+/* Contenedor de tarjetas */
+.job-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.job-card {
+  background-color: var(--gris-oscuro);
+  border: 1px solid var(--borde-suave);
+  border-radius: 10px;
+  max-width: 250px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.03);
+}
+
+/* Imagen */
+.job-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Título */
+.job-card h3 {
+  color: var(--amarillo-opaco);
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+/* Texto */
+.job-card p {
+  font-size: 0.95rem;
+  color: var(--texto-claro);
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+
+
+.button {
+  background-color: transparent;
+  color: var(--verde-soft);
+  border: 2px solid var(--verde-soft);
+  padding: 0.8rem 1.6rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: all 0.2s ease;
+}
+.button:hover {
+  background-color: var(--gris-medio);
+  color: var(--verde-hover);
+  border-color: var(--verde-hover);
+}
